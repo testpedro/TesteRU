@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Cardápio RU</string>
+    <string name="action_settings">Settings</string>
+    <string name="seg">Segunda</string>
+    <string name="ter">Terça</string>
+    <string name="qua">Quarta</string>
+    <string name="qui">Quinta</string>
+    <string name="sex">Sexta</string>
+    <string name="cont">Contato</string>
+    <string name="hora">Horário de Atendimento:</string>
+    <string name="title">Restaurante Universitário Campus Chapecó</string>
+    <string name="manha">11h15 às 13h e das 17h40 às 19h10</string>
+
+</resources>
