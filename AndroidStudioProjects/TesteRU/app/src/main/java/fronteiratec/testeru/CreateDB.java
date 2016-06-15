@@ -15,7 +15,7 @@ import fronteiratec.testeru.Dia;
 
 public class CreateDB extends SQLiteOpenHelper{
 
-    private static final String DB_NAME = "rubanco.db";
+    private static final String DB_NAME = "rubanco";
     private static final int VERSAO = 1;
 
 
@@ -64,7 +64,7 @@ public class CreateDB extends SQLiteOpenHelper{
       db.close();
     }
 
-    public List<Dia> selectDays(){
+    public List<Dia>selectDays(){
       List<Dia>listDia = new ArrayList<Dia>();
 
       SQLiteDatabase db= getReadableDatabase();

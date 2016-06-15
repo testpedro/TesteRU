@@ -54,9 +54,7 @@ public class Dia {
     public String getFood2(){
         return food2;
     }
-    public void setFood2(String food2){
-        this.food2=food2;
-    }
+    public void setFood2(String food2){this.food2=food2;}
     public String getFood3(){
         return food3;
     }
