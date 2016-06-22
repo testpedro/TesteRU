@@ -4,6 +4,7 @@ package fronteiratec.testeru;
  * Created by aluno-local on 14/06/16.
  */
 public class Dia {
+    private int id;
     private String salada1;
     private String salada2;
     private String salada3;
@@ -15,7 +16,8 @@ public class Dia {
 
     public Dia(){}
 
-    public Dia(String salada1, String salada2, String salada3, String food1, String food2, String food3, String meat, String dessert){
+    public Dia(int id,String salada1, String salada2, String salada3, String food1, String food2, String food3, String meat, String dessert){
+        this.id= id;
         this.salada1=salada1;
         this.salada2=salada2;
         this.salada3=salada3;
@@ -73,5 +75,10 @@ public class Dia {
     public void setDessert(String dessert){
         this.dessert=dessert;
     }
-
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
 }

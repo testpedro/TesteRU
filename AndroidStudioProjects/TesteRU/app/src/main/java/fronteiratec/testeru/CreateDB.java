@@ -28,6 +28,7 @@ public class CreateDB extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db){
         String sqlCreateRU = "CREATE TABLE dia("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "salada1 TEXT,"
                 + "salada2 TEXT,"
                 + "salada3 TEXT,"
@@ -51,6 +52,7 @@ public class CreateDB extends SQLiteOpenHelper{
       SQLiteDatabase db = getWritableDatabase();
       ContentValues cv = new ContentValues();
       //valor da Coluna que quero inserir
+
       cv.put("salada1", dia.getSalada1());
       cv.put("salada2", dia.getSalada2());
       cv.put("salada3", dia.getSalada3());
@@ -76,14 +78,15 @@ public class CreateDB extends SQLiteOpenHelper{
       if(c.moveToFirst()){ //move pro primeiro e retorna true da primeira posicao
         Dia day = new Dia();
         do {
-            day.setSalada1(c.getString(0)); //passa como o parametro o número da coluna (aqui é a primeira)
-            day.setSalada2(c.getString(1));
-            day.setSalada3(c.getString(2));
-            day.setFood1(c.getString(3));
-            day.setFood2(c.getString(4));
-            day.setFood3(c.getString(5));
-            day.setMeat(c.getString(6));
-            day.setDessert(c.getString(7));
+            day.setId(c.getInt(0));
+            day.setSalada1(c.getString(1)); //passa como o parametro o número da coluna (aqui é a primeira)
+            day.setSalada2(c.getString(2));
+            day.setSalada3(c.getString(3));
+            day.setFood1(c.getString(4));
+            day.setFood2(c.getString(5));
+            day.setFood3(c.getString(6));
+            day.setMeat(c.getString(7));
+            day.setDessert(c.getString(8));
             listDia.add(day);
         }while(c.moveToNext());
       }
