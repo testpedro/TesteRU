@@ -1,0 +1,51 @@
+
+p{
+  text-align: justify;
+  margin-left: 60px;
+  margin-right: 60px;
+  color:#000000;
+  background-color: #ffffff;
+}
+
+h1{
+  border-color: red;
+  border-style:dotted;
+  border-width: 5px;
+  font-family:"Lucida Console", sans-serif;
+  text-align: center;
+  background-color: white;
+}
+h2{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+h3{
+  font-family: "Courier New", sans-serif;
+  font-style: italic;
+  color: #000000;
+
+}
+
+body{
+  font-family:"Ubuntu", "Helvetica", sans-serif;
+  background-color:#FFF5EE;
+  color: red;
+  background-image: url();
+}
+
+img{
+  border-color: red;
+  border-style:dotted;
+  border-width: 5px;
+  background-color: #ffffff;
+
+}
+
+figure{
+}
+
+figcaption{
+  font-style: italic;
+}
